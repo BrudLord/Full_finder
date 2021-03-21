@@ -38,7 +38,8 @@ deltax, deltay = find_spn(toponym_to_find)
 map_params = {
     "ll": ",".join([toponym_longitude, toponym_lattitude]),
     "spn": ",".join([deltax, deltay]),
-    "l": "map"
+    "l": "map",
+    'pt': ",".join([toponym_longitude, toponym_lattitude]) + ',pm2dbm'
 }
 
 map_api_server = "http://static-maps.yandex.ru/1.x/"
